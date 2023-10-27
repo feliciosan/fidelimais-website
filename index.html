@@ -1,0 +1,509 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Fri Oct 27 2023 13:58:14 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="652ca19a4e7b1ba97de42835" data-wf-site="652ca1994e7b1ba97de427ea">
+<head>
+  <meta charset="utf-8">
+  <title>Fideli+</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/fideli-ad720d.webflow.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+</head>
+<body>
+  <div class="global-styles w-embed">
+    <style>
+/* Make text look crisper and more legible in all browsers */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+/* Prevent all click and hover interaction with an element */
+.pointer-events-off {
+	pointer-events: none;
+}
+/* Enables all click and hover interaction with an element */
+.pointer-events-on {
+  pointer-events: auto;
+}
+/* Create a class of .div-square which maintains a 1:1 dimension of a div */
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/* Adds inline flex display */
+.display-inlineflex {
+  display: inline-flex;
+}
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+.margin-0 {
+  margin: 0rem !important;
+}
+.padding-0 {
+  padding: 0rem !important;
+}
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+</style>
+  </div>
+  <div class="page-wrapper">
+    <div class="banner">
+      <div class="container-large">
+        <div class="banner-content-wrapper">
+          <div class="text-size-small text-color-neutral-0 text-align-center">Aproveite! Os 10 primeiros garantem o acesso limitado por 3 meses. 🥰</div>
+        </div>
+      </div>
+    </div>
+    <main class="main-wrapper">
+      <nav class="navigation">
+        <div class="container-large"><img src="images/01-image-logotype-original.svg" loading="lazy" alt="Logo do fidelimais 1." class="image-logo"></div>
+      </nav>
+      <aside class="section-hero">
+        <div class="container-medium">
+          <div class="hero-header-content">
+            <h1 class="heading-style-h1 text-align-center text-color-primary-900">Fidelize clientes e<br>amplie seu faturamento<br>em até 20%</h1>
+            <div class="spacer-small"></div>
+            <p class="text-size-medium text-color-neutral-300 text-align-center">A Fideli+ oferece uma plataforma simplificada para a gestão de<br>programas de fidelização. Garanta já o seu acesso antecipado!</p>
+            <div class="spacer-xlarge"></div>
+            <a href="https://iihn8geg0bo.typeform.com/to/qKrirz2p" target="_blank" class="button w-button">Obtenha acesso antecipado</a>
+            <div class="spacer-xxlarge"></div>
+          </div>
+          <div class="hero-image-wrapper"><img src="images/04-image-large-graphy.png" loading="lazy" sizes="(max-width: 479px) 100vw, 90vw" srcset="images/04-image-large-graphy-p-500.png 500w, images/04-image-large-graphy-p-800.png 800w, images/04-image-large-graphy-p-1080.png 1080w, images/04-image-large-graphy.png 1696w" alt="" class="image">
+            <div class="home-floating-image-1"><img src="images/03-image-mini-graphy.png" loading="lazy" alt="Illustração gráfica 1
+" class="image"></div>
+            <div class="home-floating-image-2"><img src="images/05-image-mini-graphy.png" loading="lazy" alt="Illustração gráfica 2
+" class="image"></div>
+          </div>
+        </div>
+      </aside>
+      <figure class="section-feature-01">
+        <div class="container-medium">
+          <div class="feature-content-wrapper">
+            <div class="image-management"><img src="images/06-image-criação-e-gerenciamento.png" loading="lazy" sizes="(max-width: 479px) 90vw, 45vw" srcset="images/06-image-criação-e-gerenciamento-p-500.png 500w, images/06-image-criação-e-gerenciamento-p-800.png 800w, images/06-image-criação-e-gerenciamento.png 968w" alt="Imagem-mulher olhando o tablete." class="image"></div>
+            <div class="content-management">
+              <h2 class="heading-style-h2">Crie e gerencie seus <br>programas de fidelidade com facilidade e autonomia.</h2>
+              <div class="spacer-medium"></div>
+              <p class="text-size-medium text-color-neutral-200">No Fideli+ fica fácil personalizar, criar e gerenciar diferentes programas de fidelização.</p>
+              <div class="spacer-medium"></div>
+              <div id="w-node-ca75b0f1-c2a6-c0a7-aeec-f205bacb58ca-7de42835" class="w-layout-layout feature-content-list wf-layout-layout">
+                <div id="w-node-ca75b0f1-c2a6-c0a7-aeec-f205bacb58cb-7de42835" class="w-layout-cell">
+                  <div class="content-list">
+                    <div class="check-icon">
+                      <div class="icon-regular w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                          <path d="M10.4722 14.4231L17.4939 7.40063L18.5748 8.48077L10.4722 16.5833L5.61084 11.722L6.69098 10.6418L10.4722 14.4231Z" fill="#EF6F1F"></path>
+                        </svg></div>
+                    </div>
+                    <div class="text-size-regular text-color-neutral-300">Aumento das vendas e o ticket médio;</div>
+                  </div>
+                </div>
+                <div id="w-node-_7e41ee9f-7d3c-1cff-8c84-b64c15e37b80-7de42835" class="w-layout-cell">
+                  <div class="content-list">
+                    <div class="check-icon">
+                      <div class="icon-regular w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                          <path d="M10.4722 14.4231L17.4939 7.40063L18.5748 8.48077L10.4722 16.5833L5.61084 11.722L6.69098 10.6418L10.4722 14.4231Z" fill="#EF6F1F"></path>
+                        </svg></div>
+                    </div>
+                    <div class="text-size-regular text-color-neutral-300">Engajamento, recorrência e fidelização;</div>
+                  </div>
+                </div>
+                <div id="w-node-_8417c1e6-3ef2-1652-3311-9d9c9b75e2a6-7de42835" class="w-layout-cell">
+                  <div class="content-list">
+                    <div class="check-icon">
+                      <div class="icon-regular w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                          <path d="M10.4722 14.4231L17.4939 7.40063L18.5748 8.48077L10.4722 16.5833L5.61084 11.722L6.69098 10.6418L10.4722 14.4231Z" fill="#EF6F1F"></path>
+                        </svg></div>
+                    </div>
+                    <div class="text-size-regular text-color-neutral-300">Maior eficiência na gestão.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="spacer-large"></div>
+              <a href="https://iihn8geg0bo.typeform.com/to/qKrirz2p" target="_blank" class="button w-button">Obtenha acesso antecipado</a>
+            </div>
+          </div>
+        </div>
+      </figure>
+      <div class="container-large">
+        <div class="divider-regular"></div>
+      </div>
+      <section class="section-feature-02">
+        <div class="container-medium">
+          <div class="feature-content-wrapper">
+            <div class="content-inteligente">
+              <h2 class="heading-style-h2">A inteligência que seu estabelecimento precisa!</h2>
+              <div class="spacer-medium"></div>
+              <p class="text-size-medium text-color-neutral-200">Tenha acesso a um painel com dados <br>e automações que fazem total diferença e que impulsionam o seu negócio.</p>
+              <div class="spacer-medium"></div>
+              <div id="w-node-_047341a8-27c6-0dab-23eb-a803ec6445c1-7de42835" class="w-layout-layout feature-content-list wf-layout-layout">
+                <div id="w-node-_047341a8-27c6-0dab-23eb-a803ec6445c2-7de42835" class="w-layout-cell">
+                  <div class="content-list">
+                    <div class="check-icon">
+                      <div class="icon-regular w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                          <path d="M10.4722 14.4231L17.4939 7.40063L18.5748 8.48077L10.4722 16.5833L5.61084 11.722L6.69098 10.6418L10.4722 14.4231Z" fill="#EF6F1F"></path>
+                        </svg></div>
+                    </div>
+                    <div class="text-size-regular text-color-neutral-300">Indicadores de desempenho;</div>
+                  </div>
+                </div>
+                <div id="w-node-_047341a8-27c6-0dab-23eb-a803ec6445c8-7de42835" class="w-layout-cell">
+                  <div class="content-list">
+                    <div class="check-icon">
+                      <div class="icon-regular w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                          <path d="M10.4722 14.4231L17.4939 7.40063L18.5748 8.48077L10.4722 16.5833L5.61084 11.722L6.69098 10.6418L10.4722 14.4231Z" fill="#EF6F1F"></path>
+                        </svg></div>
+                    </div>
+                    <div class="text-size-regular text-color-neutral-300">Automação de marketing (SMS e E-mail).</div>
+                  </div>
+                </div>
+              </div>
+              <div class="spacer-large"></div>
+              <a href="https://iihn8geg0bo.typeform.com/to/qKrirz2p" target="_blank" class="button w-button">Obtenha acesso antecipado</a>
+            </div>
+            <div id="w-node-_047341a8-27c6-0dab-23eb-a803ec6445b8-7de42835" class="image-inteligencia"><img src="images/07-image-inteligência.png" loading="lazy" sizes="(max-width: 479px) 90vw, 45vw" srcset="images/07-image-inteligência-p-500.png 500w, images/07-image-inteligência-p-800.png 800w, images/07-image-inteligência-p-1080.png 1080w, images/07-image-inteligência.png 1216w" alt="Imagem-mulher conversando no telefone." class="image"></div>
+          </div>
+        </div>
+      </section>
+      <div class="container-large">
+        <div class="divider-regular"></div>
+      </div>
+      <section class="section-para-quem">
+        <div class="container-medium">
+          <div class="to-who-content-wrapper">
+            <div class="to-who-content-top">
+              <h2 class="heading-style-h2 text-align-center">Somos perfeito para seu estabelecimento</h2>
+              <div class="spacer-medium"></div>
+              <p class="text-size-medium text-color-neutral-200 text-align-center">Nossa plataforma foi pensada e desenvolvida<br>para todos os tipos de negócios.</p>
+            </div>
+            <div class="spacer-xlarge"></div>
+            <div id="w-node-_7a9f48b4-f1aa-2335-8fbc-26455afbfd4d-7de42835" class="w-layout-layout to-who-list-wrapper wf-layout-layout">
+              <div id="w-node-_7a9f48b4-f1aa-2335-8fbc-26455afbfd4e-7de42835" class="w-layout-cell">
+                <div class="iten-block-icon">
+                  <div class="icon-1x1-large w-embed"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M26.6666 21.6667V8.33333H9.99992V21.6667C9.99992 23.5077 11.4923 25 13.3333 25H23.3333C25.1743 25 26.6666 23.5077 26.6666 21.6667ZM8.33325 5H33.3333C35.1743 5 36.6666 6.49238 36.6666 8.33333V13.3333C36.6666 15.1743 35.1743 16.6667 33.3333 16.6667H29.9999V21.6667C29.9999 25.3485 27.0151 28.3333 23.3333 28.3333H13.3333C9.65135 28.3333 6.66659 25.3485 6.66659 21.6667V6.66667C6.66659 5.7462 7.41279 5 8.33325 5ZM29.9999 8.33333V13.3333H33.3333V8.33333H29.9999ZM3.33325 31.6667H33.3333V35H3.33325V31.6667Z" fill="#1E1510"></path>
+                    </svg></div>
+                </div>
+                <div class="spacer-small"></div>
+                <div class="iten-block-text">
+                  <div>Cafeterias</div>
+                </div>
+              </div>
+              <div id="w-node-_7a9f48b4-f1aa-2335-8fbc-26455afbfd4f-7de42835" class="w-layout-cell">
+                <div class="iten-block-icon">
+                  <div class="icon-1x1-large w-embed"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M34.9999 19.4093V34.9997C34.9999 35.9202 34.2538 36.6663 33.3333 36.6663H6.66659C5.74612 36.6663 4.99992 35.9202 4.99992 34.9997V19.4093C3.96265 18.2342 3.33325 16.6903 3.33325 14.9997V4.99967C3.33325 4.07921 4.07945 3.33301 4.99992 3.33301H34.9999C35.9204 3.33301 36.6666 4.07921 36.6666 4.99967V14.9997C36.6666 16.6903 36.0373 18.2342 34.9999 19.4093ZM31.6666 21.4563C31.1339 21.5933 30.5754 21.6663 29.9999 21.6663C28.0088 21.6663 26.2214 20.7933 24.9999 19.4093C23.7784 20.7933 21.9911 21.6663 19.9999 21.6663C18.0088 21.6663 16.2215 20.7933 14.9999 19.4093C13.7784 20.7933 11.9911 21.6663 9.99992 21.6663C9.42442 21.6663 8.86595 21.5933 8.33325 21.4563V33.333H31.6666V21.4563ZM23.3333 14.9997C23.3333 14.0792 24.0794 13.333 24.9999 13.333C25.9204 13.333 26.6666 14.0792 26.6666 14.9997C26.6666 16.8407 28.1589 18.333 29.9999 18.333C31.8409 18.333 33.3333 16.8407 33.3333 14.9997V6.66634H6.66659V14.9997C6.66659 16.8407 8.15897 18.333 9.99992 18.333C11.8409 18.333 13.3333 16.8407 13.3333 14.9997C13.3333 14.0792 14.0795 13.333 14.9999 13.333C15.9204 13.333 16.6666 14.0792 16.6666 14.9997C16.6666 16.8407 18.1589 18.333 19.9999 18.333C21.8409 18.333 23.3333 16.8407 23.3333 14.9997Z" fill="#1E1510"></path>
+                    </svg></div>
+                </div>
+                <div class="spacer-small"></div>
+                <div class="iten-block-text">
+                  <div>Lanchonetes</div>
+                </div>
+              </div>
+              <div id="w-node-_51171bc6-1f4b-9f58-246d-7f85ae60b7ce-7de42835" class="w-layout-cell">
+                <div class="iten-block-icon">
+                  <div class="icon-1x1-large w-embed"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M25.8333 3.33301C29.0549 3.33301 31.6666 5.94467 31.6666 9.16634C31.6666 9.54432 31.6306 9.91391 31.5619 10.2719L31.5371 10.382C34.5176 11.3742 36.6666 14.186 36.6666 17.4997C36.6666 20.6232 34.7573 23.3007 32.0421 24.4287L30.2321 35.2737C30.0981 36.0773 29.4028 36.6663 28.5881 36.6663H11.4118C10.5971 36.6663 9.90175 36.0773 9.7678 35.2737L8.05325 24.9897C5.41478 24.8392 3.33325 22.6625 3.33325 19.9997C3.33325 17.8207 4.72704 15.9673 6.67168 15.2824L6.66659 14.9997C6.66659 9.47682 11.1437 4.99967 16.6666 4.99967C18.2019 4.99967 19.6566 5.34569 20.9566 5.96401C21.9973 4.38049 23.7929 3.33301 25.8333 3.33301ZM14.9999 24.9997H11.4333L12.8233 33.333H14.9999V24.9997ZM21.6666 24.9997H18.3333V33.333H21.6666V24.9997ZM28.5649 24.9997H24.9999V33.333H27.1749L28.5649 24.9997ZM16.6666 8.33301C13.0963 8.33301 10.1815 11.1396 10.0076 14.6121L9.99937 14.9396L10.0045 15.2223C10.0288 16.5685 9.24215 17.7873 8.02759 18.3275L7.77909 18.4263C7.1186 18.659 6.66659 19.2867 6.66659 19.9997C6.66659 20.9202 7.41279 21.6663 8.33325 21.6663H29.1666C31.4678 21.6663 33.3333 19.8008 33.3333 17.4997C33.3333 15.1985 31.4678 13.333 29.1666 13.333C28.6071 13.333 28.0694 13.4417 27.5736 13.649L27.2812 13.7852C25.6701 14.6152 23.7088 14.0024 22.8431 12.4449L22.7269 12.2161C21.6459 9.86814 19.2963 8.33301 16.6666 8.33301ZM25.8333 6.66634C24.9226 6.66634 24.1258 7.15319 23.6886 7.88081C24.5439 8.72384 25.2468 9.71874 25.7548 10.8219C26.4943 10.441 27.3063 10.1808 28.1646 10.0661C28.2741 9.78739 28.3333 9.48377 28.3333 9.16634C28.3333 7.78562 27.2139 6.66634 25.8333 6.66634Z" fill="#1E1510"></path>
+                    </svg></div>
+                </div>
+                <div class="spacer-small"></div>
+                <div class="iten-block-text">
+                  <div>Doceria</div>
+                </div>
+              </div>
+              <div id="w-node-_6a2cc857-4e36-2882-0c0d-6339a5318b7c-7de42835" class="w-layout-cell">
+                <div class="iten-block-icon">
+                  <div class="icon-1x1-large w-embed"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M35 3.33301V36.6663H31.6667V24.9997H25V13.333C25 7.81016 29.4772 3.33301 35 3.33301ZM31.6667 7.54967C30.2833 8.33301 28.3333 10.283 28.3333 13.333V21.6663H31.6667V7.54967ZM15 23.1663V36.6663H11.6667V23.1663C7.86293 22.3942 5 19.0313 5 14.9997V4.99967H8.33333V16.6663H11.6667V4.99967H15V16.6663H18.3333V4.99967H21.6667V14.9997C21.6667 19.0313 18.8037 22.3942 15 23.1663Z" fill="#1E1510"></path>
+                    </svg></div>
+                </div>
+                <div class="spacer-small"></div>
+                <div class="iten-block-text">
+                  <div>Restaurantes</div>
+                </div>
+              </div>
+              <div id="w-node-_441dd169-ff4e-7bda-daa2-5c59622acdca-7de42835" class="w-layout-cell">
+                <div class="iten-block-icon">
+                  <div class="icon-1x1-large w-embed"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.9999 5.00033C16.8409 5.00033 18.3333 6.49271 18.3333 8.33366C18.3333 8.52481 18.3173 8.71098 18.2871 8.89123L21.5744 9.44276C21.6353 9.08099 21.6666 8.71036 21.6666 8.33366C21.6666 7.93783 21.6321 7.55006 21.5659 7.17318C22.0786 6.85179 22.6838 6.66699 23.3333 6.66699C25.1743 6.66699 26.6666 8.15938 26.6666 10.0003C26.6666 10.6077 26.5049 11.1765 26.2211 11.667H8.33325C7.41279 11.667 6.66659 10.9208 6.66659 10.0003C6.66659 9.07986 7.41279 8.33366 8.33325 8.33366C8.66672 8.33366 8.97262 8.42988 9.23077 8.59548C9.68647 8.88781 10.2558 8.94058 10.7575 8.73698C11.2592 8.53336 11.6307 8.09874 11.7537 7.57149C12.0979 6.09721 13.4228 5.00033 14.9999 5.00033ZM17.5273 2.16274C16.7481 1.84324 15.8948 1.66699 14.9999 1.66699C12.5014 1.66699 10.3261 3.04048 9.18439 5.07273C8.90747 5.02513 8.62303 5.00033 8.33325 5.00033C5.57184 5.00033 3.33325 7.23891 3.33325 10.0003C3.33325 11.4812 3.977 12.8116 4.99992 13.7272V33.3337C4.99992 35.1747 6.4923 36.667 8.33325 36.667H24.9999C26.8409 36.667 28.3333 35.1747 28.3333 33.3337H31.6666C33.5076 33.3337 34.9999 31.8413 34.9999 30.0003V18.3337C34.9999 16.4927 33.5076 15.0003 31.6666 15.0003H28.3333V14.4099C29.3691 13.2359 29.9999 11.691 29.9999 10.0003C29.9999 6.31843 27.0151 3.33366 23.3333 3.33366C22.1904 3.33366 21.1139 3.62201 20.1736 4.12893C19.4751 3.27034 18.5669 2.58899 17.5273 2.16274ZM28.3333 18.3337H31.6666V30.0003H28.3333V18.3337ZM24.9999 15.0003V16.667V31.667V33.3337H8.33325V15.0003H24.9999ZM11.6666 18.3337V30.0003H14.9999V18.3337H11.6666ZM21.6666 18.3337V30.0003H18.3333V18.3337H21.6666Z" fill="#1E1510"></path>
+                    </svg></div>
+                </div>
+                <div class="spacer-small"></div>
+                <div class="iten-block-text">
+                  <div>Bares</div>
+                </div>
+              </div>
+              <div id="w-node-a1830c9e-6453-4d80-af3a-092c16b5ba28-7de42835" class="w-layout-cell">
+                <div class="iten-block-icon">
+                  <div class="icon-1x1-large w-embed"><svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M35.0002 21.6667V33.3333C35.0002 34.2538 34.254 35 33.3335 35H6.66683C5.74636 35 5.00016 34.2538 5.00016 33.3333V21.6667H3.3335V18.3333L5.00016 10H35.0002L36.6668 18.3333V21.6667H35.0002ZM8.3335 21.6667V31.6667H31.6668V21.6667H8.3335ZM6.73285 18.3333H33.2675L32.2675 13.3333H7.73285L6.73285 18.3333ZM10.0002 23.3333H23.3335V28.3333H10.0002V23.3333ZM5.00016 5H35.0002V8.33333H5.00016V5Z" fill="#1E1510"></path>
+                    </svg></div>
+                </div>
+                <div class="spacer-small"></div>
+                <div class="iten-block-text">
+                  <div>Entre outros</div>
+                </div>
+              </div>
+            </div>
+            <div class="spacer-xxlarge"></div>
+            <a href="https://iihn8geg0bo.typeform.com/to/qKrirz2p" target="_blank" class="button w-button">Obtenha acesso antecipado</a>
+          </div>
+        </div>
+      </section>
+      <div class="container-large">
+        <div class="divider-regular"></div>
+      </div>
+      <aside class="section-faqs">
+        <div class="container-medium">
+          <div class="faqs-content-top">
+            <h2 class="heading-style-h2 text-align-center">Dúvidas Frequentes</h2>
+            <div class="spacer-medium"></div>
+            <p class="text-size-medium text-color-neutral-200 text-align-center">Encontre resposta para perguntas frequentes.<br>Se ainda tiver dúvidas, entre em contato.</p>
+          </div>
+          <div class="spacer-xxlarge"></div>
+          <div class="w-layout-grid faqs-wrapper">
+            <div id="w-node-abd960e7-9fd9-0cc5-e974-cb4332a85693-7de42835" data-w-id="abd960e7-9fd9-0cc5-e974-cb4332a85693" class="faqs-question-block">
+              <div class="faqs-question-top">
+                <div class="text-size-regular text-weight-semibold">O que é o Fideli+?</div>
+                <div class="icon-regular w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#1E1510"></path>
+                  </svg></div>
+              </div>
+              <div style="opacity:0;width:100%;height:0px" class="faqs-answer">
+                <div class="spacer-medium"></div>
+                <p class="text-size-regular text-color-neutral-300">O Fideli+ é uma plataforma digital que permite a criação e gestão de programas de fidelidade para autônomos, pequenas e médias empresas.</p>
+              </div>
+            </div>
+            <div id="w-node-eac2cace-944b-9915-fd68-bdd9c1b11599-7de42835" data-w-id="eac2cace-944b-9915-fd68-bdd9c1b11599" class="faqs-question-block">
+              <div class="faqs-question-top">
+                <div class="text-size-regular text-weight-semibold">O que são programas de fidelidade?</div>
+                <div class="icon-regular w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#1E1510"></path>
+                  </svg></div>
+              </div>
+              <div style="opacity:0;width:100%;height:0px" class="faqs-answer">
+                <div class="spacer-medium"></div>
+                <p class="text-size-regular text-color-neutral-300">Programas de fidelidade são serviços que oferecem benefícios aos clientes que fazem compras recorrentes, com o objetivo de fidelizar e manter esses clientes.</p>
+              </div>
+            </div>
+            <div id="w-node-_7bd6b2f3-efbd-a2cf-666e-6f3030b2e278-7de42835" data-w-id="7bd6b2f3-efbd-a2cf-666e-6f3030b2e278" class="faqs-question-block">
+              <div class="faqs-question-top">
+                <div class="text-size-regular text-weight-semibold">Como funciona a Fideli+?</div>
+                <div class="icon-regular w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#1E1510"></path>
+                  </svg></div>
+              </div>
+              <div style="opacity:0;width:100%;height:0px" class="faqs-answer">
+                <div class="spacer-medium"></div>
+                <p class="text-size-regular text-color-neutral-300">O processo é simples: você cria uma conta de forma descomplicada, personaliza um cartão de fidelidade e disponibiliza um código QR em seu estabelecimento para que os clientes possam se cadastrar.</p>
+              </div>
+            </div>
+            <div id="w-node-bd18c2d1-bc4e-3507-72f0-2e9d6518af4c-7de42835" data-w-id="bd18c2d1-bc4e-3507-72f0-2e9d6518af4c" class="faqs-question-block">
+              <div class="faqs-question-top">
+                <div class="text-size-regular text-weight-semibold">Preciso pagar alguma coisa?</div>
+                <div class="icon-regular w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#1E1510"></path>
+                  </svg></div>
+              </div>
+              <div style="opacity:0;width:100%;height:0px" class="faqs-answer">
+                <div class="spacer-medium"></div>
+                <p class="text-size-regular text-color-neutral-300">Não, oferecemos um período de utilização gratuita de 30 dias para que você possa experimentar e verificar se nossa plataforma ajuda a reter mais clientes e aumentar sua receita. Após o período de 30 dias, a plataforma lhe avisará e perguntará se deseja continuar conosco. Se a resposta for afirmativa, oferecemos planos a partir de R$ 59,90. Além disso, os primeiros 10 estabelecimentos cadastrados terão 3 meses de uso gratuito.</p>
+              </div>
+            </div>
+            <div id="w-node-_31c2fab4-e0b3-bb61-063b-8028d86e2256-7de42835" data-w-id="31c2fab4-e0b3-bb61-063b-8028d86e2256" class="faqs-question-block">
+              <div class="faqs-question-top">
+                <div class="text-size-regular text-weight-semibold">Como saber se ganhei o acesso limitado?</div>
+                <div class="icon-regular w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#1E1510"></path>
+                  </svg></div>
+              </div>
+              <div style="opacity:0;width:100%;height:0px" class="faqs-answer">
+                <div class="spacer-medium"></div>
+                <p class="text-size-regular text-color-neutral-300">Você receberá um e-mail informando sobre a concessão do acesso gratuito por tempo limitado.</p>
+              </div>
+            </div>
+            <div id="w-node-e5be7be9-f4e5-85df-1352-1228ba190cc7-7de42835" data-w-id="e5be7be9-f4e5-85df-1352-1228ba190cc7" class="faqs-question-block">
+              <div class="faqs-question-top">
+                <div class="text-size-regular text-weight-semibold">O Fideli+ é adequado para o meu negócio?</div>
+                <div class="icon-regular w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#1E1510"></path>
+                  </svg></div>
+              </div>
+              <div style="opacity:0;width:100%;height:0px" class="faqs-answer">
+                <div class="spacer-medium"></div>
+                <p class="text-size-regular text-color-neutral-300">O Fideli+ é adequado para qualquer tipo de negócio que deseje construir um relacionamento duradouro com seus clientes, desde autônomos até pequenas e médias empresas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer class="footer">
+      <div class="container-large">
+        <div id="w-node-_17be8209-0abf-5bbc-e74a-51ba7d4e2610-7de42835" class="w-layout-layout footer-content-wrapper wf-layout-layout">
+          <div id="w-node-_17be8209-0abf-5bbc-e74a-51ba7d4e2611-7de42835" class="w-layout-cell">
+            <div><img src="images/02-image-logotype-inverse.svg" loading="lazy" alt="Logo do fidelimais 2."></div>
+            <div class="spacer-medium"></div>
+            <p class="text-size-regular text-color-neutral-200">Somos uma plataforma digital de criação e gestão de programas <br>de fidelidade mais simples do Brasil.</p>
+          </div>
+          <div id="w-node-_17be8209-0abf-5bbc-e74a-51ba7d4e2612-7de42835" class="w-layout-cell">
+            <h3 class="heading-style-h3 text-color-neutral-0">Contato</h3>
+            <div class="spacer-medium"></div>
+            <a href="mailto:fidelimais.oficial@gmail.com" class="text-style-link w-inline-block">
+              <p class="text-size-regular text-color-neutral-200">fidelimais.oficial@gmail.com</p>
+            </a>
+            <p class="text-size-regular text-color-neutral-200">81 99119.3733</p>
+          </div>
+          <div id="w-node-cf537bcf-e3d7-32a5-6daf-d8a47246c6a1-7de42835" class="w-layout-cell">
+            <h3 class="heading-style-h3 text-color-neutral-0">Rede Sociais</h3>
+            <div class="spacer-medium"></div>
+            <a href="https://www.instagram.com/fidelimais.oficial/" class="text-style-link w-inline-block">
+              <p class="text-size-regular text-color-neutral-200">Instagram</p>
+            </a>
+          </div>
+        </div>
+        <div class="spacer-xlarge"></div>
+        <div class="container-large">
+          <div class="divider-regular-2"></div>
+        </div>
+        <div class="spacer-xlarge"></div>
+        <p class="text-size-regular text-color-neutral-200">© Todos os direitos reservadosa Fidelimais.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=652ca1994e7b1ba97de427ea" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+</body>
+</html>
