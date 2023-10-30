@@ -3,11 +3,11 @@
   --neutral-200: #8f8d8c;
   --neutral-0: white;
   --neutral-5: #f0eceb;
+  --neutral-50: #e0dddc;
   --primary-500: #fa6440;
   --primary-600: #cc5133;
   --primary-50: #feefec;
   --neutral-300: #525050;
-  --neutral-50: #e0dddc;
 }
 
 .w-layout-layout {
@@ -585,6 +585,7 @@ figcaption {
 .icon-1x1-medium {
   width: 2rem;
   height: 2rem;
+  position: static;
 }
 
 .heading-style-h1 {
@@ -844,9 +845,14 @@ figcaption {
 }
 
 .text-style-link {
-  color: #000;
-  text-decoration: none;
+  color: var(--neutral-200);
+  text-decoration: underline;
+  transition: background-color .2s;
   display: block;
+}
+
+.text-style-link:hover {
+  color: var(--neutral-50);
 }
 
 .text-size-large {
@@ -1322,6 +1328,8 @@ figcaption {
 }
 
 .section-feature-01 {
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 8rem 5%;
 }
 
@@ -1707,6 +1715,56 @@ figcaption {
   margin-right: auto;
 }
 
+.div-block-15 {
+  width: 56px;
+  height: 56px;
+  background-color: #2bcd3e;
+  border-radius: 200px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.link-block {
+  position: absolute;
+}
+
+.button-whatsapp {
+  z-index: 30;
+  width: 64px;
+  height: 64px;
+  background-color: #2bcd3e;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: static;
+  bottom: 3%;
+  right: 3%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.button-icon-whatsapp {
+  z-index: 30;
+  width: 64px;
+  height: 64px;
+  background-color: #2bcd3e;
+  border-radius: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.button-icon-whatsapp:hover {
+  background-color: #128c7e;
+}
+
 @media screen and (max-width: 991px) {
   .padding-xlarge {
     padding: 3rem;
@@ -1869,6 +1927,10 @@ figcaption {
     grid-template-columns: 1fr;
   }
 
+  .heading-style-h2, .text-size-medium.text-color-neutral-200 {
+    text-align: left;
+  }
+
   .fs-styleguide_section {
     grid-column-gap: 2.5rem;
     grid-template-columns: 1fr;
@@ -1877,6 +1939,21 @@ figcaption {
   .padding-section-medium {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  .home-floating-image-1, .home-floating-image-2 {
+    display: none;
+  }
+
+  .feature-content-wrapper {
+    grid-template-columns: 1fr;
+    align-content: stretch;
+    justify-content: stretch;
+    justify-items: center;
+  }
+
+  .to-who-content-top {
+    align-items: flex-start;
   }
 }
 
@@ -2203,7 +2280,12 @@ figcaption {
 
   .heading-style-h2 {
     text-align: center;
+    margin-top: 1rem;
     font-size: 1.2rem;
+  }
+
+  .button {
+    font-size: .875rem;
   }
 
   .text-size-medium.text-color-neutral-300.text-align-center {
@@ -2236,13 +2318,27 @@ figcaption {
     display: block;
   }
 
+  .content-management {
+    align-items: center;
+    display: flex;
+  }
+
   .feature-content-wrapper {
     flex-direction: column;
     grid-template-columns: 1fr;
     justify-content: center;
   }
 
-  .section-feature-02, .section-para-quem, .section-faqs, .footer {
+  .section-feature-02, .section-para-quem {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .content-inteligente {
+    align-items: center;
+  }
+
+  .section-faqs, .footer {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
   }
@@ -2271,7 +2367,7 @@ figcaption {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-#w-node-_17be8209-0abf-5bbc-e74a-51ba7d4e2610-7de42835 {
+#w-node-_464c995c-0697-7ef6-f178-b4109405c585-9405c583 {
   grid-template-rows: auto;
   grid-template-columns: 2fr 1fr 1fr;
 }
@@ -2332,6 +2428,17 @@ figcaption {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
+@media screen and (max-width: 991px) {
+  #w-node-_047341a8-27c6-0dab-23eb-a803ec6445b8-7de42835 {
+    order: -9999;
+  }
+
+  #w-node-_7a9f48b4-f1aa-2335-8fbc-26455afbfd4d-7de42835 {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 @media screen and (max-width: 479px) {
   #w-node-_047341a8-27c6-0dab-23eb-a803ec6445b8-7de42835 {
     order: -9999;
@@ -2342,7 +2449,7 @@ figcaption {
     grid-template-columns: 1fr 1fr;
   }
 
-  #w-node-_17be8209-0abf-5bbc-e74a-51ba7d4e2610-7de42835 {
+  #w-node-_464c995c-0697-7ef6-f178-b4109405c585-9405c583 {
     grid-template-rows: auto;
     grid-template-columns: 2fr;
   }
