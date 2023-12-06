@@ -1394,8 +1394,6 @@ figcaption {
 
 .section.light-color {
   background-color: var(--neutral-5);
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .text-span {
